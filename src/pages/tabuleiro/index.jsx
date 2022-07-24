@@ -12,22 +12,22 @@ import { playResultSoung, playSoundFundo } from '../../components/Musics';
 
 //TABULEIRO VAZIO
 const TABULEIRO = [
-    { id: 1, index: 0, status: false, card: (status) => <Card /> },
-    { id: 2, index: 0, status: false, card: (status) => <Card /> },
-    { id: 3, index: 0, status: false, card: (status) => <Card /> },
-    { id: 4, index: 0, status: false, card: (status) => <Card /> },
-    { id: 5, index: 0, status: false, card: (status) => <Card /> },
-    { id: 6, index: 0, status: false, card: (status) => <Card /> },
-    { id: 7, index: 0, status: false, card: (status) => <Card /> },
-    { id: 8, index: 0, status: false, card: (status) => <Card /> },
-    { id: 9, index: 0, status: false, card: (status) => <Card /> },
-    { id: 10, index: 0, status: false, card: (status) => <Card /> },
-    { id: 11, index: 0, status: false, card: (status) => <Card /> },
-    { id: 12, index: 0, status: false, card: (status) => <Card /> },
-    { id: 13, index: 0, status: false, card: (status) => <Card /> },
-    { id: 14, index: 0, status: false, card: (status) => <Card /> },
-    { id: 15, index: 0, status: false, card: (status) => <Card /> },
-    { id: 16, index: 0, status: false, card: (status) => <Card /> },
+    { id: 1, index: 0, status: false, card: () => <Card /> },
+    { id: 2, index: 0, status: false, card: () => <Card /> },
+    { id: 3, index: 0, status: false, card: () => <Card /> },
+    { id: 4, index: 0, status: false, card: () => <Card /> },
+    { id: 5, index: 0, status: false, card: () => <Card /> },
+    { id: 6, index: 0, status: false, card: () => <Card /> },
+    { id: 7, index: 0, status: false, card: () => <Card /> },
+    { id: 8, index: 0, status: false, card: () => <Card /> },
+    { id: 9, index: 0, status: false, card: () => <Card /> },
+    { id: 10, index: 0, status: false, card: () => <Card /> },
+    { id: 11, index: 0, status: false, card: () => <Card /> },
+    { id: 12, index: 0, status: false, card: () => <Card /> },
+    { id: 13, index: 0, status: false, card: () => <Card /> },
+    { id: 14, index: 0, status: false, card: () => <Card /> },
+    { id: 15, index: 0, status: false, card: () => <Card /> },
+    { id: 16, index: 0, status: false, card: () => <Card /> },
 ];
 
 export default function TelaTabuleiro({ navigation }) {
@@ -373,7 +373,7 @@ export default function TelaTabuleiro({ navigation }) {
 
                         <View style={styles.modalMenuItens}>
                             <TouchableOpacity style={styles.modalMenuItensBtn} onPress={() => navigation.navigate('Inicial')}><Ionicons name='home' size={20} /></TouchableOpacity>
-                            <TouchableOpacity style={styles.modalMenuItensBtn} onPress={() => reiniciarPartida(false)}><Ionicons name='refresh' size={20} /></TouchableOpacity>
+                            <TouchableOpacity style={styles.modalMenuItensBtn} onPress={() => reiniciarPartida(false)} disabled={ contador > 0 }><Ionicons name='refresh' size={20} /></TouchableOpacity>
                             <TouchableOpacity style={styles.modalMenuItensBtn} onPress={() => setModalMenu(false)}><Ionicons name='backspace' size={20} />
                             </TouchableOpacity>
                         </View>

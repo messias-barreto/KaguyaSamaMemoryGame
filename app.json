@@ -1,10 +1,13 @@
 {
   "expo": {
     "name": "KaguyaSamaMemoryGame",
-    "slug": "KaguyaSamaMemoryGame",
+    "slug": "kaguya-sama-memory-game",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "android": {
+      "package": "com.barretosdrive.kaguyasamamemorygame"
+    }
   }
 }

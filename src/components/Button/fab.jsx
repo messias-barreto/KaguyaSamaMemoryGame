@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Image, SafeAreaView, StyleSheet, TouchableOpacity, View } from "react-native";
 
 export default function BtnFab(props){
     return(
@@ -9,8 +9,9 @@ export default function BtnFab(props){
             activeOpacity={0.7}
             onPress={props.onclick(true)}
             style={styles.touchableOpacityStyle}>
+             
             <Image
-              source={require('../../assets/img/menu.png')}
+              source={require('../../assets/img/menu-button.png')}
               style={styles.floatingButtonStyle}
             />
           </TouchableOpacity>
@@ -38,6 +39,10 @@ const styles = StyleSheet.create({
       resizeMode: 'contain',
       width: 50,
       height: 50,
-      borderRadius: 50 / 2
+      borderRadius: 50 / 2,
+      backgroundColor: '#8B0000',
+      overflow: "hidden",
+      borderWidth: 3,
+      borderColor: '#8B0000'
     },
 })
