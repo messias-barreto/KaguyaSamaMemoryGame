@@ -27,4 +27,4 @@ Jogo da memória inspirado no Anime Kaguya-Sama, com funcionalidades como:
 - expo start
 
 ## Demo 
-Adicionar no Expo Gi a url: exp://exp.host/@messias.barreto/kaguya-sama-memory-game 
+Adicionar no Expo Go a url: exp://exp.host/@messias.barreto/kaguya-sama-memory-game 
